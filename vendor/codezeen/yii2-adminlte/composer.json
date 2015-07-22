@@ -1,0 +1,53 @@
+{
+    "name": "codezeen/yii2-adminlte",
+    "description": "Admin-LTE-2 Extension for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","admin","template","adminlte"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Agiel K. Saputra",
+            "email": "13nightevil@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "cebe/yii2-gravatar": "*",
+        "rmrevin/yii2-fontawesome": "2.10.1",
+        "codezeen/yii2-fastclick": "1.0",
+
+        "bower-asset/adminlte": "~2.1.0"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "codezeen\\yii2\\adminlte\\": ""
+        }
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        },
+        "asset-ignore-files": {
+            "bower-asset/adminlte": [
+                "/.*",
+                "bootstrap",
+                "build",
+                "documentation",
+                "pages",
+                "plugins",
+                "node_modules",
+                "bower_components",
+                "composer.json",
+                "*.html",
+                "*.json",
+                "*.md",
+                "*.js"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

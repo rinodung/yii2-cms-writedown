@@ -1,0 +1,27 @@
+{
+    "name": "codezeen/yii2-tinymce",
+    "description": "TinyMCE extension for Yii2 with compressor",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","tinymce","editor","js"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Agiel K. Saputra",
+            "email": "13nightevil@gmail.com"
+        }
+    ],
+     "require": {
+        "yiisoft/yii2": "*",
+        "bower-asset/tinymce-dist": ">=4.1.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "codezeen\\yii2\\tinymce\\": ""
+        }
+    },
+	"extra": {      
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
